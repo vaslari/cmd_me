@@ -29,3 +29,17 @@ Comandos que me facilitan la vida como SysAdmin
 ## Push an existing repository from the command line
     git remote add origin git@github.com:vaslari/cmd_me.git
     git push -u origin master
+
+## remoto bitlocker metodos informacion(si tiene password se puede activar)
+    manage-bde c: -protectors -get
+
+## Remoto bitlocker activar
+    manage-bde -on C:
+
+## Proxmox log 
+    journalctl -u proxmox-backup -u proxmox-backup-proxy
+
+## Proxmox Configuration VM
+    /etc/pve/qemu-server/700.conf
+    /etc/pve/qemu-server/100.conf
+    /etc/pve/qemu-server/200.conf
