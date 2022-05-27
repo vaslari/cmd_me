@@ -43,3 +43,19 @@ Comandos que me facilitan la vida como SysAdmin
     /etc/pve/qemu-server/700.conf
     /etc/pve/qemu-server/100.conf
     /etc/pve/qemu-server/200.conf
+
+## Safeboot (modo seguro)
+    bcdedit /set {default} safeboot minimal
+    bcdedit /set {default} safebootalternateshell yes
+    bcdedit /set {default} safeboot network
+    bcdedit /deletevalue {default} safeboot
+
+## Error en GPupdate. Renombrar "Registry.pol"
+    C:\Windows\System32\GroupPolicy\Machine
+    C:\Windows\System32\GroupPolicy\User
+
+## Dism
+    DISM /Online /Cleanup-Image /StartComponentCleanup
+    DISM /Online /Cleanup-Image /AnalyzeComponentStore
+    DISM /Online /Cleanup-Image /RestoreHealth
+    SFC /SCANNOW
