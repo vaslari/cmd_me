@@ -59,3 +59,6 @@ Comandos que me facilitan la vida como SysAdmin
     DISM /Online /Cleanup-Image /AnalyzeComponentStore
     DISM /Online /Cleanup-Image /RestoreHealth
     SFC /SCANNOW
+
+## Restaurar de de fabrica desde Cmd
+    systemreset –factoryreset
