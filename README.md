@@ -68,3 +68,8 @@ Comandos que me facilitan la vida como SysAdmin
     sudo ufw allow 8000/tcp
     sudo ufw deny 25/tcp
     sudo ufw allow 5000:6000/tcp
+
+## NginX CMD
+    sudo systemctl restart nginx
+    # Permite comprobar la config de NginX
+    sudo nginx -t
