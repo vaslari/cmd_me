@@ -73,3 +73,8 @@ Comandos que me facilitan la vida como SysAdmin
     sudo systemctl restart nginx
     # Permite comprobar la config de NginX
     sudo nginx -t
+
+## QEMU de MV
+    systemctl status qemu-guest-agent
+    apt-get install qemu-guest-agent
+    yum install qemu-guest-agent
